@@ -1,0 +1,44 @@
+Write a SQL statement for each of the following. 
+
+1. Get 10 cities in descending alphabetical order.
+A: SELECT * FROM city ORDER BY city_id DESC LIMIT 10;
+
+2. Get all films with "airplane" in the title.
+A: SELECT * FROM film WHERE title LIKE '%airplane%';
+
+3. Get the highest payment amount.
+A: SELECT MAX(amount) FROM payment;
+
+4. Get the number of records in the customer table for store id #1.
+A: SELECT COUNT(store_id) FROM customer WHERE store_id=1;
+
+5. Get all payment records for customer with email address "NANCY.THOMAS@sakilacustomer.org"
+A: SELECT * FROM customer WHERE email LIKE '%NANCY.THOMAS@sakilacustomer.org%';
+
+6. Use a View to get the film info for actor Bob Fawcett.
+A: (I used the existing View):
+   SELECT film_info FROM actor_info WHERE first_name = 'bob' AND last_name = 'fawcett';
+
+7. Use a Stored Procedure to get the 4 inventory ids for the film "Alien Center" at Store #2. 
+A: (I used an existing View):
+   SELECT FID FROM film_list WHERE title = "Alien Center";
+   SELECT store_id FROM inventory WHERE inventory_id = "15";
+
+8. Insert a new store. Ensure that you use TRANSACTION. (This one is possible but it's tough! 
+Pay attention to constraints and the order that you are inserting data.) (Don't disable constraints)
+A: (this is most likely erroneous while attempting to not hard code values, my apologies)
+START TRANSACTION;
+INSERT INTO store (store_id, manager_staff_id, address_id, last_update) 
+SELECT 
+   (SELECT MAX(store_id) FROM store), 
+   (SELECT MAX(manager_staff_id) FROM store), 
+   (SELECT MAX(address_id) FROM store), 
+   CURRENT_TIMESTAMP;
+COMMIT;
+
+9. Update the timestamp to the current date/time for the new store you entered in the previous question.
+A: (best attempt without perfecting #8)
+UPDATE store SET last_update = CURRENT_TIMESTAMP WHERE store_id = 3;
+
+10. Delete the new store. 
+A:  DELETE FROM test_table WHERE store_id = 3;
