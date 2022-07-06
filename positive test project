@@ -18,11 +18,11 @@ This positive test will only cover these specific test cases and will only focus
 
 
 Test cases
-QT-001: Rocket Bass authorized dealer test
-As a user I can find and view an authorized dealer for the Rocket Bass product
+QT-001: Rocket Bass RB-108 authorized dealer test
+As a user I can find and view, in one location, a list of authorized dealers for the Rocket Bass RB-108 product
 Summary
 From the Ampeg main page, I can select Products to view a list of available product lines, then select Rocket Bass Series from the available products, then select
-Find A Dealer to view the available Authorized Rocket Bass Dealers.
+Find A Dealer, then select Buy Now near the RB-108 product to view the available Authorized Rocket Bass Dealers.
 
 QT-002: Rocket Bass RB-108 description test
 As a user I can view the description for the Rocket Bass RB-108 product
@@ -30,11 +30,11 @@ Summary
 From the Ampeg main page, I can select Products to view a list of available product lines, then select Rocket Bass Series from the available products, then select
 the model RB-108 to view the description for the product.
 
-QT-003: 
-Title for test case/short description
-As a user I can find product dealers for individual products
+QT-003: Rocket Bass RB-108 user manual test
+As a user I can find, in one location, all of the available manuals for the Rocket Bass RB-108 product
 Summary
-Test steps and expected results for reach step
+From the Ampeg main page, I can select Products to view a list of available product lines, then select Rocket Bass Series from the available products, then select
+the model RB-108 to view the description for the product.
 
 QT-004 
 Title for test case/short description
