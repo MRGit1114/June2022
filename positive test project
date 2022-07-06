@@ -3,7 +3,8 @@ Quintrix Positive Test
 Summary and Scope
 The purpose of this document is to demonstrate a series of positive tests for the Ampeg website (https://ampeg.com/index.html). A positive test is a type of testing
 that is performed with the assumption that everything will work as expected. This check of certain functionality is performed to ensure that the end user (a customer, 
-in this case) can make positive interactions with the site. The scope of this test will be written for non-experts in QA using any product on the Ampeg website.
+in this case) can make positive interactions with the site. The scope of this test will be written from the perspective of a user of the Ampeg website and documented 
+for readability by non-experts in QA.
 
 Test case ID
 This positive test assigns a test case ID of QT (Quintrix Test), incremented numerically per test number starting with 001 (ex: QT-001).
@@ -14,28 +15,32 @@ reproduction and further implementation into automation software such as Seleniu
 
 
 Test cases
-FR-001 As a user I can view artist endorsement for a specific product
+QT-001 
 Title for test case/short description
+As a user I can view artist endorsement for a specific product
 Summary
 Test steps and expected results for reach step
 
-
-FR-002 As a user I can view specifications for individual products
-Test steps and expected results for reach step
+QT-002 
 Title for test case/short description
+As a user I can view specifications for individual products
 Summary
-
-FR-003 As a user I can find product dealers for individual products
 Test steps and expected results for reach step
-Title for test case/short description
-Summary
 
-FR-004 As a user I can view, in one location, all artists that endorse Ampeg products
-Test steps and expected results for reach step
+QT-003 
 Title for test case/short description
+As a user I can find product dealers for individual products
 Summary
+Test steps and expected results for reach step
 
-FR-005 As a user I can view items in my Shopping Cart  
-Test steps and expected results for reach step
+QT-004 
 Title for test case/short description
+As a user I can view, in one location, all artists that endorse Ampeg products
 Summary
+Test steps and expected results for reach step
+
+FQT-005 
+Title for test case/short description
+As a user I can view items in my Shopping Cart  
+Summary
+Test steps and expected results for reach step
