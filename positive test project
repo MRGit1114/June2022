@@ -1,6 +1,16 @@
-Items needed:
+Quintrix Positive Test
 
-Test case ID: QT (Quintrix Test), incremented numerically per test number starting with 001 (ex: QT-001)
+Summary and Scope
+The purpose of this document is to demonstrate a series of positive tests for the Ampeg website (https://ampeg.com/index.html). A positive test is a type of testing
+that is performed with the assumption that everything will work as expected. This check of certain functionality is performed to ensure that the end user (a customer, 
+in this case) can make positive interactions with the site. 
+
+Test case ID
+This positive test assigns a test case ID of QT (Quintrix Test), incremented numerically per test number starting with 001 (ex: QT-001).
+
+Traceability
+Tests performed in this positive test environment will contain detailed steps for reproducing each test case in order to achieve good traceability for test case
+reproduction and further implementation into automation software such as Selenium.
 
 Title for test case/short description
 Summary
