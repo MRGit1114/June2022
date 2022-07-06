@@ -36,11 +36,11 @@ Summary
 From the Ampeg main page, I can select Products to view a list of available product lines, then select Rocket Bass Series from the available products, then select
 the model RB-108, then select Manuals, then select Rocket Bass 108 to view all of the available user manuals.
 
-QT-004 
-Title for test case/short description
-As a user I can view, in one location, all artists that endorse Ampeg products
+QT-004: Rocket Bass RB-108 comparison chart test
+As a user I can view a comparison of the Rocket Bass RB-108 with the other Rocket Bass RB products
 Summary
-Test steps and expected results for reach step
+From the Ampeg main page, I can select Products to view a list of available product lines, then select Rocket Bass Series from the available products, then select
+the model RB-108, then select Comparison Chart to view a comparison of the Rocket Bass RB-108 and all of the other available Rocket Base RB products.
 
 FQT-005 
 Title for test case/short description
