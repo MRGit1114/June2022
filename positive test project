@@ -42,8 +42,9 @@ Summary
 From the Ampeg main page, I can select Products to view a list of available product lines, then select Rocket Bass Series from the available products, then select
 the model RB-108, then select Comparison Chart to view a comparison of the Rocket Bass RB-108 and all of the other available Rocket Base RB products.
 
-FQT-005 
+FQT-005: Rocket Bass RB-108 sound sample test
 Title for test case/short description
-As a user I can view items in my Shopping Cart  
+As a user I can hear samples of the Rocket Bass RB-108 product
 Summary
-Test steps and expected results for reach step
+From the Ampeg main page, I can select Products to view a list of available product lines, then select Rocket Bass Series from the available products, then select
+either the RB-108 EQ Flat or the RBN-108 SGT Edge to hear a sound preview.
