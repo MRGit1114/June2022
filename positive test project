@@ -1,5 +1,7 @@
 Items needed:
-Test case ID
+
+Test case ID: QT (Quintrix Test), incremented numerically per test number starting with 001 (ex: QT-001)
+
 Title for test case/short description
 Summary
 Test steps and expected results for reach step
@@ -7,3 +9,28 @@ Traceability
 Test data
 (pick any product on the ampeg.com site for the test cases)
 (write them in the case of writing them for the others in class, from a non-expert amongst other non-experts)
+
+Title for test case/short description
+Summary
+FR-001 As a user I can view artist endorsement for a specific product
+Test steps and expected results for reach step
+
+Title for test case/short description
+Summary
+FR-002 As a user I can view specifications for individual products
+Test steps and expected results for reach step
+
+Title for test case/short description
+Summary
+FR-003 As a user I can find product dealers for individual products
+Test steps and expected results for reach step
+
+Title for test case/short description
+Summary
+FR-004 As a user I can view, in one location, all artists that endorse Ampeg products
+Test steps and expected results for reach step
+
+Title for test case/short description
+Summary
+FR-005 As a user I can view items in my Shopping Cart  
+Test steps and expected results for reach step
