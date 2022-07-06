@@ -7,27 +7,30 @@ in this case) can make positive interactions with the site. The scope of this te
 for readability by non-experts in QA.
 
 Test case ID
-This positive test assigns a test case ID of QT (Quintrix Test), incremented numerically per test number starting with 001 (ex: QT-001).
+This positive test assigns the test case ID of QT (Quintrix Test), incremented numerically per test number starting with 001 (ex: QT-001).
 
 Traceability
 Tests performed in this positive test environment will contain detailed steps for reproducing each test case in order to achieve good traceability for test case
 reproduction and further implementation into automation software such as Selenium.
 
+What will not be tested
+This positive test will only cover these specific test cases and will only focus on the intended positive testing outcome.
+
 
 Test cases
-QT-001 
-Title for test case/short description
-As a user I can view artist endorsement for a specific product
+QT-001: Rocket Bass authorized dealer test
+As a user I can find and view an authorized dealer for the Rocket Bass product
 Summary
-Test steps and expected results for reach step
+From the Ampeg main page, I can select Products to view a list of available product lines, then select Rocket Bass Series from the available products, then select
+Find A Dealer to view the available Authorized Rocket Bass Dealers.
 
-QT-002 
-Title for test case/short description
-As a user I can view specifications for individual products
+QT-002: Rocket Bass RB-108 description test
+As a user I can view the description for the Rocket Bass RB-108 product
 Summary
-Test steps and expected results for reach step
+From the Ampeg main page, I can select Products to view a list of available product lines, then select Rocket Bass Series from the available products, then select
+the model RB-108 to view the description for the product.
 
-QT-003 
+QT-003: 
 Title for test case/short description
 As a user I can find product dealers for individual products
 Summary
