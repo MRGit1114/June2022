@@ -1,5 +1,3 @@
-(no indexes, no (""), no $/$$, no ::)
-
 1. Page: /text-box. Write a selector that will return the ‘Full Name’ textbox using the ID attribute. 
 Hint: This element has the ‘input’ tag.
 
