@@ -1,0 +1,37 @@
+(no indexes, no (""), no $/$$, no ::)
+
+1. Page: /text-box. Write a selector that will return the ‘Full Name’ textbox using the ID attribute. 
+Hint: This element has the ‘input’ tag.
+
+A: "input[id='userName']"
+
+
+2.Page: /buttons. Write a selector that will return all 3 buttons.
+
+A: 'button:contains("Click")'
+
+
+3. Page: /buttons. Write a selector that will return the span element in the footer.
+
+A: "footer span"
+
+
+4. Page: /menu. Write a selector that will return the 3 list item elements in the unordered list.
+
+A: ul li a:contains("Main")
+
+
+5. Page: /select-menu. Write a selector that will get the option element where value = 4
+
+A: select[id='oldSelectMenu'] option[value='4']
+
+
+6. Page: /slider. Write the JavaScript to get the value for the element with id=sliderValue.
+
+A: document.getElementById('sliderValue');
+
+
+7. Page: /text-box. Write the JavaScript to set the value for the element with id=username.
+
+A: document.getElementById('userName').value="I set a new value here";
+
