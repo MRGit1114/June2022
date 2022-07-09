@@ -1,0 +1,40 @@
+1. Page: /text-box. Write the xpath that will return the ‘Full Name’ textbox using the ID attribute. 
+Hint: This element has the ‘input’ tag.
+
+A: //input[@id='userName']
+
+
+2. Page: /buttons. Write the xpath that will return all elements on the page with the ‘button’ tag.
+
+A: //*[button]
+
+
+3. Page: /webtables. Write the xpath that will return the div with text of ‘Vega’. Ensure to narrow 
+the scope of your xpath to the ReactTable and ensure that your xpath is limited to returning
+cells only. Cells in this table have the class ‘rt-td’. Hint: You must use “Vega” in your xpath.
+
+A: //div[@class='ReactTable -striped -highlight']//div[@class='rt-table']//div[@class='rt-tbody']//div[@class='rt-tr -odd']//div[. = 'Vega']
+
+
+4. Page: /radio-button. Write the xpath that will return the parent element for the radio button 
+with id=’impressiveRadio’.
+
+A: //input[@id='impressiveRadio']/parent::div
+
+
+5. Page: /radio-button. Write the xpath that will return all DIV ancestors for the radio button with 
+id=’impressiveRadio’.
+
+A: //input[@id='impressiveRadio']/ancestor::div
+
+
+6. Page: /radio-button: Write the xpath that will return the sibling for the radio button with 
+id=’impressiveRadio’. Do not use the sibling axes. Navigate to the parent element then down to 
+the sibling instead.
+
+A: //input[@id='impressiveRadio']/../../../../../../../..//noscript
+
+
+7. Page: /buttons. Write the xpath that will return all buttons containing the value “Click”.
+
+A: //*[contains(text(),'Click')]
