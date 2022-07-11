@@ -6,7 +6,7 @@ A: //input[@id='userName']
 
 2. Page: /buttons. Write the xpath that will return all elements on the page with the ‘button’ tag.
 
-A: //*[button]
+A: //button
 
 
 3. Page: /webtables. Write the xpath that will return the div with text of ‘Vega’. Ensure to narrow 
@@ -32,7 +32,7 @@ A: //input[@id='impressiveRadio']/ancestor::div
 id=’impressiveRadio’. Do not use the sibling axes. Navigate to the parent element then down to 
 the sibling instead.
 
-A: //input[@id='impressiveRadio']/../../../../../../../..//noscript
+A: //input[@id="impressiveRadio"]/div/..//label
 
 
 7. Page: /buttons. Write the xpath that will return all buttons containing the value “Click”.
