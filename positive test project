@@ -1,0 +1,93 @@
+Quintrix Positive Test
+
+Summary and Scope
+The purpose of this document is to demonstrate a series of positive tests for the Ampeg website (https://ampeg.com/index.html). A positive test is a type of testing
+that is performed with the assumption that everything will work as expected. This check of certain functionality is performed to ensure that the end user (a customer, 
+in this case) can make positive interactions with the site. The scope of this test will be written from the perspective of a user of the Ampeg website and documented 
+for readability by non-experts in QA.
+
+Test case ID
+This positive test assigns the test case ID of QT (Quintrix Test), incremented numerically per test number starting with 001 (ex: QT-001).
+
+Traceability
+Tests performed in this positive test environment will contain detailed steps for reproducing each test case in order to achieve good traceability for test case
+reproduction and further implementation into automation software such as Selenium.
+
+What will not be tested
+This positive test will only cover these specific test cases and will only focus on the intended positive testing outcome.
+
+
+Test cases
+-QT-001: Rocket Bass RB-108 authorized dealer test
+As a user I can find and view, in one location, a list of authorized dealers for the Rocket Bass RB-108 product
+
+Summary
+From the Ampeg main page, I can select Products to view a list of available product lines, then select Rocket Bass Series from the available products, then select
+Find A Dealer, then select Buy Now near the RB-108 product to view the available Authorized Rocket Bass Dealers.
+
+Steps to reproduce and expected outcome:
+1.) Navigate to URL, expected to land on page https://ampeg.com
+2.) Select Products button, expected to load page https://ampeg.com/products/
+3.) Select Rocket Bass from the list, expected to load page https://ampeg.com/rocket-bass/
+4.) Select Find a Dealer button, expected to load page https://ampeg.com/rocket-bass/buy.html
+5.) Select Buy Now button near the RB-108 product image, expected to load a pop up screen with available locations to buy the product
+
+
+-QT-002: Rocket Bass RB-108 description test
+As a user I can view the description for the Rocket Bass RB-108 product
+
+Summary
+From the Ampeg main page, I can select Products to view a list of available product lines, then select Rocket Bass Series from the available products, then select
+the model RB-108 to view the description for the product.
+
+Steps to reproduce and expected outcome:
+1.) Navigate to URL, expected to land on page https://ampeg.com
+2.) Select Products button, expected to load page https://ampeg.com/products/
+3.) Select Rocket Bass from the list, expected to load page https://ampeg.com/rocket-bass/
+4.) Select RB-108 button, expected to load page https://ampeg.com/rocket-bass/rb-108.html
+
+
+-QT-003: Rocket Bass RB-108 user manual test
+As a user I can find, in one location, all of the available manuals for the Rocket Bass RB-108 product
+
+Summary
+From the Ampeg main page, I can select Products to view a list of available product lines, then select Rocket Bass Series from the available products, then select
+the model RB-108, then select Manuals, then select Rocket Bass 108 to view all of the available user manuals.
+
+Steps to reproduce and expected outcome:
+1.) Navigate to URL, expected to land on page https://ampeg.com
+2.) Select Products button, expected to load page https://ampeg.com/products/
+3.) Select Rocket Bass from the list, expected to load page https://ampeg.com/rocket-bass/
+4.) Select RB-108 button, expected to load page https://ampeg.com/rocket-bass/rb-108.html
+5.) Select Manuals button, expected to load page https://ampeg.com/support/manuals/#rocketbass
+6.) Select Rocket Bass 108 from the list, expected to load page https://ampeg.com/support/manuals/rocket-bass-108
+
+
+-QT-004: Rocket Bass RB-108 comparison chart test
+As a user I can view a comparison of the Rocket Bass RB-108 with the other Rocket Bass RB products
+
+Summary
+From the Ampeg main page, I can select Products to view a list of available product lines, then select Rocket Bass Series from the available products, then select
+the model RB-108, then select Comparison Chart to view a comparison of the Rocket Bass RB-108 and all of the other available Rocket Base RB products.
+
+Steps to reproduce and expected outcome:
+1.) Navigate to URL, expected to land on page https://ampeg.com
+2.) Select Products button, expected to load page https://ampeg.com/products/
+3.) Select Rocket Bass from the page, expected to load page https://ampeg.com/rocket-bass/
+4.) Select RB-108 button, expected to load https://ampeg.com/rocket-bass/rb-108.html
+5.) Select Comparison Chart button, expected to load page https://ampeg.com/rocket-bass/files/Ampeg-Rocket-Bass-Sales-Comp-Chart-18MAR2021.pdf
+
+
+-QT-005: Rocket Bass RB-108 sound sample test
+As a user I can hear samples of the Rocket Bass RB-108 product
+
+Summary
+From the Ampeg main page, I can select Products to view a list of available product lines, then select Rocket Bass Series from the available products, then select
+either the RB-108 EQ Flat or the RBN-108 SGT Edge to hear a sound preview.
+
+Steps to reproduce and expected outcome:
+1.) Navigate to URL, expected to land on page https://ampeg.com
+2.) Select Products button, expected to load page https://ampeg.com/products/
+3.) Select Rocket Bass from the page, expected to load page https://ampeg.com/rocket-bass/
+4.) Select RB-108 EQ Flat image, expected to hear a sound sample play
+
