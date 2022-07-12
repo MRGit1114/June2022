@@ -26,8 +26,9 @@ public class JdbcTests {
 			}
 		} catch (SQLException ex) {
 			ex.printStackTrace();
+		} finally {
+			disconnect();
 		}
-		disconnect();
 
 		int result = countRows;
 
@@ -52,8 +53,9 @@ public class JdbcTests {
 			}
 		} catch (SQLException ex) {
 			ex.printStackTrace();
+		} finally {
+			disconnect();
 		}
-		disconnect();
 
 		int result = countRows;
 
@@ -76,8 +78,9 @@ public class JdbcTests {
 			}
 		} catch (SQLException ex) {
 			ex.printStackTrace();
+		} finally {
+			disconnect();
 		}
-		disconnect();
 
 		double result = Double.parseDouble(Highest);
 
@@ -99,9 +102,10 @@ public class JdbcTests {
 			}
 		} catch (SQLException ex) {
 			ex.printStackTrace();
+		} finally {
+			disconnect();
 		}
-		disconnect();
-
+		
 		int result = Integer.parseInt(NumberOfRecords);
 
 		assertEquals(result, testCaseAmount, "Sum of the numbers was not correct");
@@ -138,9 +142,10 @@ public class JdbcTests {
 			}
 		} catch (SQLException ex) {
 			ex.printStackTrace();
+		} finally {
+			disconnect();
 		}
-		disconnect();
-
+		
 		int result = countRows;
 
 		assertEquals(result, testCaseAmount, "Sum of the numbers was not correct");
@@ -163,9 +168,10 @@ public class JdbcTests {
 			}
 		} catch (SQLException ex) {
 			ex.printStackTrace();
+		} finally {
+			disconnect();
 		}
-		disconnect();
-
+		
 		int result = countRows;
 
 		assertEquals(result, testCaseAmount, "Sum of the numbers was not correct");
@@ -202,9 +208,10 @@ public class JdbcTests {
 			}
 		} catch (SQLException ex) {
 			ex.printStackTrace();
+		} finally {
+			disconnect();
 		}
-		disconnect();
-
+		
 		int firstResult = countRowsForTestCase1;
 		int secondResult = countRowsForTestCase2;
 
@@ -251,9 +258,10 @@ public class JdbcTests {
 			}
 		} catch (SQLException ex) {
 			ex.printStackTrace();
+		} finally {
+			disconnect();
 		}
-		disconnect();
-
+		
 		int result = executedSuccessfully;
 
 		assertEquals(result, testCaseAmount, "The test did not execute successfully");
@@ -281,9 +289,10 @@ public class JdbcTests {
 			}
 		} catch (SQLException ex) {
 			ex.printStackTrace();
+		} finally {
+			disconnect();
 		}
-		disconnect();
-
+		
 		int result = executedSuccessfully;
 
 		assertEquals(result, testCaseAmount, "The test did not execute successfully");
@@ -316,9 +325,10 @@ public class JdbcTests {
 			}
 		} catch (SQLException ex) {
 			ex.printStackTrace();
+		} finally {
+			disconnect();
 		}
-		disconnect();
-
+		
 		int result = executedSuccessfully;
 
 		assertEquals(result, testCaseAmount, "The test did not execute successfully");
