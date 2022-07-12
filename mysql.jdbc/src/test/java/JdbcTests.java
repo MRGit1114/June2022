@@ -23,7 +23,6 @@ public class JdbcTests {
 			while(rs.next()){
 				countRows ++;
 				String City = rs.getString("city");
-				//System.out.println(City);
 			}
 		} catch (SQLException ex) {
 			ex.printStackTrace();
@@ -50,7 +49,6 @@ public class JdbcTests {
 			while(rs.next()){
 				countRows ++;
 				String Title= rs.getString("title");
-				//System.out.println(Title);
 			}
 		} catch (SQLException ex) {
 			ex.printStackTrace();
@@ -75,7 +73,6 @@ public class JdbcTests {
 
 			while(rs.next()){
 				Highest = rs.getString("Highest");
-				//System.out.println(Amount);
 			}
 		} catch (SQLException ex) {
 			ex.printStackTrace();
@@ -97,10 +94,8 @@ public class JdbcTests {
 			String query = "SELECT COUNT(*) AS NumberOfRecords FROM customer AS c WHERE c.store_id = 1";
 			statement = connection.createStatement();
 			rs = statement.executeQuery(query);
-			//countRows = 0;
 			while(rs.next()){
 				NumberOfRecords = rs.getString("NumberOfRecords");
-				//System.out.println(NumberOfRecords);
 			}
 		} catch (SQLException ex) {
 			ex.printStackTrace();
@@ -140,8 +135,6 @@ public class JdbcTests {
 				Integer RentalID = rs.getInt("rental_id");
 				BigDecimal Amount = rs.getBigDecimal("amount");
 				String PaymentDate = rs.getString("payment_date");
-				//System.out.println(PaymentID+"\t"+CustomerID+"\t"+StaffID+"\t"+RentalID+"\t"+Amount+"\t"+PaymentDate+"\t"
-				//+StoreID+"\t"+FirstName+"\t"+LastName+"\t"+Email+"\t"+AddressID+"\t"+Active+"\t"+CreateDate+"\t"+LastUpdate);
 			}
 		} catch (SQLException ex) {
 			ex.printStackTrace();
@@ -167,7 +160,6 @@ public class JdbcTests {
 			while(rs.next()){
 				countRows ++;
 				String FilmInfo = rs.getString("film_info");
-				//System.out.println(FilmInfo);
 			}
 		} catch (SQLException ex) {
 			ex.printStackTrace();
@@ -195,7 +187,6 @@ public class JdbcTests {
 			while(rs.next()){
 				countRowsForTestCase1 ++;
 				String FilmID = rs.getString("@filmID := film_id");
-				//System.out.println(FilmID);
 			}
 		} catch (SQLException ex) {
 			ex.printStackTrace();
@@ -208,7 +199,6 @@ public class JdbcTests {
 			while(rs.next()){
 				countRowsForTestCase2 ++;
 				Integer InventoryID = rs.getInt("inventory_id");
-				//System.out.println(InventoryID);
 			}
 		} catch (SQLException ex) {
 			ex.printStackTrace();
@@ -224,7 +214,6 @@ public class JdbcTests {
 
 	@Test
 	public void TestNgTest8() {
-		//this test fails despite my best efforts, my apologies
 		connect();
 		int executedSuccessfully = 0;
 		int testCaseAmount = 1; 
@@ -272,7 +261,6 @@ public class JdbcTests {
 
 	@Test
 	public void TestNgTest9() {
-		//this test fails despite my best efforts, my apologies
 		connect();
 		int executedSuccessfully = 0;
 		int testCaseAmount = 1; 
@@ -303,7 +291,6 @@ public class JdbcTests {
 
 	@Test
 	public void TestNgTest10() {
-		//this test fails despite my best efforts, my apologies
 		connect();
 		int executedSuccessfully = 0;
 		int testCaseAmount = 1; 
@@ -344,12 +331,7 @@ public class JdbcTests {
 		connection = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			//System.out.println("Connecting to Database...");
 			connection = DriverManager.getConnection(databaseURL, user, password);
-			/*
-			 * if (connection != null) { System.out.println("Connected to the Database...");
-			 * }
-			 */
 		} catch (SQLException ex) {
 			ex.printStackTrace();
 		}
@@ -361,7 +343,6 @@ public class JdbcTests {
 	private void disconnect() {
 		if (connection != null) {
 			try {
-				//System.out.println("Closing Database Connection...");
 				connection.close();
 			} catch (SQLException ex) {
 				ex.printStackTrace();
