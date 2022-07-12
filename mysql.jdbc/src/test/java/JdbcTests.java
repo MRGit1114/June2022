@@ -10,7 +10,7 @@ public class JdbcTests {
 	private static ResultSet rs;
 
 	@Test
-	public void TestNgTest1() {
+	public void OrderCitiesByDescendingOrder() {
 
 		connect();
 		int countRows = 0;
@@ -36,7 +36,7 @@ public class JdbcTests {
 	}
 
 	@Test
-	public void TestNgTest2() {
+	public void FindTitlesLikeAirplane() {
 
 		connect();
 		int countRows = 0;
@@ -61,7 +61,7 @@ public class JdbcTests {
 	}
 
 	@Test
-	public void TestNgTest3() {
+	public void SelectHighestAmountFromPayment() {
 
 		connect();
 		String Highest = "";
@@ -85,7 +85,7 @@ public class JdbcTests {
 	}
 
 	@Test
-	public void TestNgTest4() {
+	public void SelectRecordsFromStoreId1() {
 
 		connect();
 		String NumberOfRecords = "";
@@ -109,7 +109,7 @@ public class JdbcTests {
 	}
 
 	@Test
-	public void TestNgTest5() {
+	public void FindPaymentUsingEmail() {
 
 		connect();
 		int countRows = 0;
@@ -147,7 +147,7 @@ public class JdbcTests {
 	}
 
 	@Test
-	public void TestNgTest6() {
+	public void FindFilmInfoFromFirstLastName() {
 
 		connect();
 		int countRows = 0;
@@ -172,7 +172,7 @@ public class JdbcTests {
 	}
 
 	@Test
-	public void TestNgTest7() {
+	public void SelectFilmByTitle() {
 
 		connect();
 		int countRowsForTestCase1 = 0;
@@ -213,7 +213,7 @@ public class JdbcTests {
 	}
 
 	@Test
-	public void TestNgTest8() {
+	public void CreateNewStore() {
 		connect();
 		int executedSuccessfully = 0;
 		int testCaseAmount = 1; 
@@ -260,7 +260,7 @@ public class JdbcTests {
 	}
 
 	@Test
-	public void TestNgTest9() {
+	public void UpdateTimestampForNewStore() {
 		connect();
 		int executedSuccessfully = 0;
 		int testCaseAmount = 1; 
@@ -290,7 +290,7 @@ public class JdbcTests {
 	}
 
 	@Test
-	public void TestNgTest10() {
+	public void DeleteNewStore() {
 		connect();
 		int executedSuccessfully = 0;
 		int testCaseAmount = 1; 
