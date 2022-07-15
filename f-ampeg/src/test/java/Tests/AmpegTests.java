@@ -12,10 +12,10 @@ import Pages.RB108ManualPageObject;
 import Pages.RB108PageObject;
 import Pages.RocketBassPageObject;
 
-public class AmpegTests extends SeleniumTestBase {
+public class AmpegTests extends AmpegTestBase {
 	@Test
 	public void findDealerTest() {
-		String actualUrl = new HomePageObject(this.driver, BASE_URL)
+		String actualUrl = new HomePageObject(this.driver, this.getBaseUrl())
 				.navigate()
 				.products()
 				.rocketBass()
@@ -28,7 +28,7 @@ public class AmpegTests extends SeleniumTestBase {
 
 	@Test
 	public void findDescriptionTest() {
-		String actualUrl = new HomePageObject(this.driver, BASE_URL)
+		String actualUrl = new HomePageObject(this.driver, this.getBaseUrl())
 				.navigate()
 				.products()
 				.rocketBass()
@@ -40,7 +40,7 @@ public class AmpegTests extends SeleniumTestBase {
 
 	@Test
 	public void findUserManualTest() {
-		String actualUrl = new HomePageObject(this.driver, BASE_URL)
+		String actualUrl = new HomePageObject(this.driver, this.getBaseUrl())
 				.navigate()
 				.products()
 				.rocketBass()
@@ -54,7 +54,7 @@ public class AmpegTests extends SeleniumTestBase {
 
 	@Test
 	public void comparisonChartTest() {
-		String actualUrl = new HomePageObject(this.driver, BASE_URL)
+		String actualUrl = new HomePageObject(this.driver, this.getBaseUrl())
 				.navigate()
 				.products()
 				.rocketBass()
@@ -67,7 +67,7 @@ public class AmpegTests extends SeleniumTestBase {
 
 	@Test
 	public void soundSampleTest() {
-		String actualUrl = new HomePageObject(this.driver, BASE_URL)
+		String actualUrl = new HomePageObject(this.driver, this.getBaseUrl())
 				.navigate()
 				.products()
 				.rocketBass()
