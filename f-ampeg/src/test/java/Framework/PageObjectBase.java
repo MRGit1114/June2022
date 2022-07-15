@@ -22,4 +22,9 @@ public abstract class PageObjectBase {
 	protected String getBaseUrl() {
 		return baseUrl;
 	}
+	
+	public void navigate(String url) {
+		String fullUrl = this.getBaseUrl() + url;
+		this.getDriver().navigate().to(fullUrl);
+	}
 }
