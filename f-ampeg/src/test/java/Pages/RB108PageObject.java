@@ -25,7 +25,7 @@ public class RB108PageObject extends PageObjectBase {
 		element.click();
 
 		Set<String> handles = getDriver().getWindowHandles();
-		String lastHandle = Helpers.getLastElement(handles);
+		String lastHandle = Helpers.getLastWindowHandle(handles);
 
 		getDriver().switchTo().window(lastHandle);
 
@@ -37,7 +37,7 @@ public class RB108PageObject extends PageObjectBase {
 		element.click();
 
 		Set<String> handles = getDriver().getWindowHandles();
-		String lastHandle = Helpers.getLastElement(handles);
+		String lastHandle = Helpers.getLastWindowHandle(handles);
 
 		getDriver().switchTo().window(lastHandle);
 

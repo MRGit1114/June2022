@@ -37,7 +37,7 @@ public class DealerPageObject extends PageObjectBase {
 		}
 
 		Set<String> handles = getDriver().getWindowHandles();
-		String lastHandle = Helpers.getLastElement(handles);
+		String lastHandle = Helpers.getLastWindowHandle(handles);
 
 		getDriver().switchTo().window(lastHandle);
 

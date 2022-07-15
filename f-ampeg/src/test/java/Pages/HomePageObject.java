@@ -23,7 +23,7 @@ public class HomePageObject extends PageObjectBase {
 		element.click();
 
 		Set<String> handles = getDriver().getWindowHandles();
-		String lastHandle = Helpers.getLastElement(handles);
+		String lastHandle = Helpers.getLastWindowHandle(handles);
 
 		getDriver().switchTo().window(lastHandle);
 
