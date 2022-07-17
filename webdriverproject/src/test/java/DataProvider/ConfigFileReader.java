@@ -9,7 +9,7 @@ import java.util.Properties;
 public class ConfigFileReader {
 	
 	private Properties properties;
-	private final String propertyFilePath= "resources//config.properties";
+	protected final String propertyFilePath= "src//main//resources//config.properties";
 
 	
 	public ConfigFileReader(){
@@ -45,6 +45,12 @@ public class ConfigFileReader {
 		String url = properties.getProperty("url");
 		if(url != null) return url;
 		else throw new RuntimeException("url not specified in the config.properties file.");
+	}
+	
+	public String getBrowser() {
+		String browser = properties.getProperty("browser");
+		if(browser != null) return browser;
+		else throw new RuntimeException("browser not specified in the config.properties file.");
 	}
 
 }
