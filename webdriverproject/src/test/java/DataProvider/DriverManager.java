@@ -6,13 +6,13 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
-public class ConfigFileReader {
+public class DriverManager {
 	
 	private Properties properties;
 	protected final String propertyFilePath= "src//main//resources//config.properties";
 
 	
-	public ConfigFileReader(){
+	public DriverManager(){
 		BufferedReader reader;
 		try {
 			reader = new BufferedReader(new FileReader(propertyFilePath));
