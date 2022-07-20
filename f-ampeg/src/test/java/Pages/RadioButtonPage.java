@@ -1,6 +1,7 @@
 package Pages;
 
 import java.time.Duration;
+import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -24,25 +25,29 @@ public class RadioButtonPage extends PageObjectBase {
 	}
 
 	public RadioButtonPage setYes() {
-		//WebDriverWait wait = new WebDriverWait(driver, 10);
-		WebElement element = getDriver().findElement(By.cssSelector("input[name='yesRadio']"));
-		boolean radioButton = element.isSelected();
-		if(radioButton == false) {
-			element.click();
-		}
-		//WebElement element = getDriver().findElement(By.id("yesRadio"));
-		//RadioButton button = new RadioButton(element);
-		//button.select("Yes");
 		
-		//return new 	RadioButtonHomePageObject(getDriver(), getBaseUrl());
+		WebElement element = getDriver().findElement(By.cssSelector("input[id='yesRadio']"));
+		boolean radioButton = element.isSelected();
+		element.click();
+		
 		return this;
-	
 	}
 
 	public Object setImpressive() {
-		WebElement element = getDriver().findElement(By.id("impressiveRadio"));
+		WebElement element = getDriver().findElement(By.cssSelector("input[id='impressiveRadio']"));
+		boolean radioButton = element.isSelected();
 		element.click();
 		
 		return new 	RadioButtonPage(getDriver(), getBaseUrl());
+	}
+	
+	public boolean setNo() {
+		boolean itExists = true;
+		//attempt to find disabled button in page
+		/*
+		 * try { getDriver().findElement(By.cssSelector("input[id='noRadio']")); } catch
+		 * (NoSuchElementException e) { itExists = false; }
+		 */
+	    return itExists;
 	}
 }

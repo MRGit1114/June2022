@@ -22,10 +22,16 @@ public class SliderPage extends PageObjectBase {
 		return this;
 	}
 	
-	public SliderPage setSlider() {
-		//TODO add web element for slider and values (value="25" on ToolsQA) to pass
-		WebElement element = getDriver().findElement(By.id("sliderValue"));
+	public SliderPage getSliderValue() {
+		WebElement element = getDriver().findElement(By.cssSelector("input[value='25']"));
+		return this;
+	}
+	
+	public SliderPage setValue() {
+		Integer value = 80;
+		WebElement element = getDriver().findElement(By.cssSelector("input[value='80']"));
 		Slider slider = new Slider(element);
-		return null;
+		
+		return new SliderPage(getDriver(), getBaseUrl());
 	}
 }
