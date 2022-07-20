@@ -6,10 +6,10 @@ import java.util.Scanner;
 
 import org.testng.annotations.Test;
 
-import DataProvider.ConfigFileReader;
+import DataProvider.DriverManager;
 
 
-public class WebDriverTests extends ConfigFileReader {
+public class TestBase extends DriverManager {
 	@Test
 	public void readValuesFromConfigFile() {
 		String actualLocation = propertyFilePath;
