@@ -1,11 +1,7 @@
 package Tests;
 
 import static org.testng.Assert.assertEquals;
-
-import java.util.Scanner;
-
 import org.testng.annotations.Test;
-
 import DataProvider.DriverManager;
 
 
