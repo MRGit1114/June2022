@@ -1,6 +1,6 @@
 package DataProvider;
 
-public class ChromeDriverManager {
+public class ChromeDriverManager extends DriverManager {
 	void createDriver() {
 	}
 }
