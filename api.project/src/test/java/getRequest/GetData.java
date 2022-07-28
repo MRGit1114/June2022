@@ -15,26 +15,40 @@ public class GetData {
 	@Test
 	public void getSingleUserEmailAddress() {
 
-		given().get("https://reqres.in/api/users/2").then().body("data.email", equalTo("janet.weaver@reqres.in"));
+		given()
+		.get("https://reqres.in/api/users/2")
+		.then()
+		.body("data.email", equalTo("janet.weaver@reqres.in"));
 
 	}
 
 	@Test
 	public void verifyPOSTToken() {
 
-		given().post("https://reqres.in/api/users").then().statusCode(201);
+		given()
+		.post("https://reqres.in/api/users")
+		.then()
+		.statusCode(201);
 	}
 
 	@Test
 	public void verifyResponseCode() {
 		
-		when().delete("https://reqres.in/api/users/2").then().statusCode(204);
+		when()
+		.delete("https://reqres.in/api/users/2")
+		.then()
+		.statusCode(204);
 	}
 
 	@Test
 	public void lookupResponseCode() {
 
-		given().delete("https://reqres.in/api/users/2").then().statusCode(204).log().all();
+		given()
+		.delete("https://reqres.in/api/users/2")
+		.then()
+		.statusCode(204)
+		.log()
+		.all();
 	}
 
 	@Test
@@ -82,18 +96,25 @@ public class GetData {
 	@Test
 	public void getSingleUser() {
 
-		RestAssured.baseURI = "https://reqres.in/";
-		RequestSpecification httpRequest = RestAssured.given();
-		Response response = httpRequest.get("/api/users/2");
-		System.out.println("Response Body is: " + response.asString());
+		RequestSpecification request = RestAssured.given();
+        	request.baseUri("https://reqres.in/ ");
+        	request.basePath("/api/users/2");
+        	Response response = request.get();
+        	JSONResponse responseBody = response.getBody().as(JSONResponse.class);
+        
+        	Assert.assertEquals("janet.weaver@reqres.in", responseBody.data.email);
 	}
 
 	@Test
 	public void getListUsers() {
 
-		RestAssured.baseURI = "https://reqres.in/";
-		RequestSpecification httpRequest = RestAssured.given();
-		Response response = httpRequest.get("/users?page=2");
-		System.out.println("Response Body is: " + response.asString());
+		RequestSpecification request = RestAssured.given();
+        	request.baseUri("https://reqres.in/ ");
+        	request.basePath("/api/users?page=2");
+        	Response response = request.get();
+        	JSONListResponse responseBody = response.getBody().as(JSONListResponse.class);
+        	List<JSONData> dataObject = responseBody.data; 
+		
+        	Assert.assertEquals("emma.wong@reqres.in", dataObject.get(2).email);
 	}
 }
