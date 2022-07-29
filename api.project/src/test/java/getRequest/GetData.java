@@ -1,7 +1,10 @@
 package getRequest;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -102,7 +105,7 @@ public class GetData {
         	Response response = request.get();
         	JSONResponse responseBody = response.getBody().as(JSONResponse.class);
         
-        	Assert.assertEquals("janet.weaver@reqres.in", responseBody.data.email);
+        	Assert.assertEquals("janet.weaver@reqres.in", responseBody.data);
 	}
 
 	@Test
