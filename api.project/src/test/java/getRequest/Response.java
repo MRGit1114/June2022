@@ -1,8 +1,8 @@
 package getRequest;
 
-public class JSONResponse {
+public class Response {
 
 	public String data;
-	public JSONSupport support;
+	public Support support;
 	
 }
