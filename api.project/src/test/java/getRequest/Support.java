@@ -1,6 +1,6 @@
 package getRequest;
 
-public class JSONSupport {
+public class Support {
 
 	public String url;
 	public String text;
