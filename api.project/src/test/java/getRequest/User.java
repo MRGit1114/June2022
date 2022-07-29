@@ -1,6 +1,6 @@
 package getRequest;
 
-public class JSONData {
+public class User {
 
 	public String id;
 	public String email;
