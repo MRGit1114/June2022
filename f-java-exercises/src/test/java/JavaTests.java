@@ -165,7 +165,6 @@ public class JavaTests {
 	@Test
 	public void demonstrateForEachLoop() {
 
-
 	    String[] arrayList = {"Pizza", "Coffee"};
 	    String[] expectedArrayList = {"Pizza", "Coffee"};
 	    
