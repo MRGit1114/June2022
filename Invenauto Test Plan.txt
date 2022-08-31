@@ -1,0 +1,218 @@
+﻿
+
+
+
+INVENTAUTO TEST PLAN
+
+
+
+
+
+
+
+
+
+
+
+
+Table of Contents
+
+INTRODUCTION	3
+1.1	Objectives	3
+1.2	Team Members	3
+2	SCOPE	3
+3	ASSUMPTIONS / RISKS	4
+3.1	Assumptions	4
+3.2	Risks	4
+4	TEST APPROACH	4
+4.1	Test Automation	4
+5	TEST ENVIRONMENT	5
+6	MILESTONES / DELIVERABLES	5
+6.1	Test Schedule	5
+6.2	Deliverables	5
+Introduction 
+This Invenauto Test Plan has been created to communicate the test approach to team members. It includes the objectives, scope, schedule, risks and approach.  This document will clearly identify what the test deliverables will be and what is deemed in and out of scope.
+
+1.1 Objectives
+Jira is a web-based Test Management tool used to create and store tests as well as the results of running those tests.  This tool is a new product written with Java using TestNg and Maven. The test team is responsible for testing the product and ensuring it meets their needs. The test team is both the customer and the tester in this project.
+
+Phase 1 of the project will establish Jira sprints and create and store manual tests from items listed in the Ecommerce BRD.  This will allow the test team to start building tests for the Invenauto.tech website.  Must have functionality is considered more important than the delivery date in this project.
+1.2 Team Members
+Resource Name
+Role
+Taylor Cox
+Team Fire
+Michael Ross
+Team Fire
+Michelle Zheng
+Team Fire
+
+2 Scope
+The initial phase will include all ‘must have’ requirements. These and any other requirements that get included must all be tested.  At the end of Phase 1, a tester must be able to:
+1. Create a manual test with as many steps as necessary
+2. Save it
+3. Retrieve it and have the ability to view it when running the test
+4. Enter results and appropriate comments
+5. View results
+
+As the team works with the website, they will define the needs for the next phase(s).
+Load testing will not be considered part of this project since the user base is known and not an issue.
+Rewriting, moving, or porting existing test cases from the existing Invenauto Test Plan documents is not considered part of this project.  
+3 Assumptions / Risks
+3.1 Assumptions
+This section lists assumptions that are made specific to this project.
+1. Delivery of the product is in format that the test team can check it into Jenkins for automated testing.
+2. A GitHub repository must be created to be used with Jenkins.
+
+3.2 Risks
+The following risks have been identified and the appropriate action identified to mitigate their impact on the project.  The impact (or severity) of the risk is based on how the project would be affected if the risk was triggered.  The trigger is what milestone or event would cause the risk to become an issue to be dealt with.
+
+#
+Risk
+Impact
+Trigger
+Mitigation Plan
+1
+First time Jira users – testers are using Jira for the first time and will take some time to adapt to the site
+High
+Delays in implementation date 
+Priorities will be set and discussed by stakeholders in the Ecommerce BRD. Since the driver is functionality and not time, it may be necessary to push the date out.
+2
+First time Jenkins users – Setting up Jenkins functionality may take time to establish functionality for all testers
+High 
+Delays in automated testing
+Export data prior to any upgrade, massage as necessary and re-import after upgrade.
+3
+Daily delivery is not possible because the developers can only meet for 2 hours Mon-Fri
+Medium
+Product may not get delivered on schedule
+Allow for additional time outside of meeting hours at developers discretion.
+
+
+
+
+
+
+4 Test Approach
+The project is using an agile approach with weekly iterations. At the end of each day the requirements identified for that iteration will be delivered to the team and will be tested. The beginning of each day will have a standup meeting to discuss the previous day and to discuss the next steps.
+
+Exploratory testing will play a large part of the testing as the team has never used these types of tools and will be learning as they go.  Tests for planned functionality will be created and added to Jira as we get iterations of the product.
+
+4.1 Test Automation
+Automated unit tests are part of the development process, but no automated functional tests are planned at this time. As the sprints progress, items will be given a priority from the Ecommerce BRD and the team will build manual tests before selecting the tests to be automated.
+
+5  Test Environment
+Jenkins is required for automatic testing, which also requires a GitHub repository to be created for builds.  
+
+
+6 Milestones / Deliverables
+6.1 Test Schedule
+The initial test schedule follows:
+
+Task Name
+Start
+Finish 
+Effort
+Comments
+Test Planning
+
+
+
+
+   Review Requirements documents
+
+
+2 d
+
+   Create initial test estimates
+
+
+1 d
+
+Staff and train new test resources
+
+
+
+
+First deploy to QA test environment
+
+
+
+
+Functional testing – Iteration 1
+
+
+
+
+Iteration 2 deploy to QA test environment
+
+
+
+
+Functional testing – Iteration 2
+
+
+
+
+System testing
+
+
+
+
+Regression testing
+
+
+
+
+UAT
+
+
+
+
+Resolution of final defects and final build testing
+
+
+
+
+Deploy to Staging environment
+
+
+
+
+Performance testing
+
+
+
+
+Release to Production
+
+
+
+
+
+6.2 Deliverables
+Deliverable
+For
+Date / Milestone
+Test Plan
+Project Manager; QA Director; Test Team
+
+Traceability Matrix
+Project Manager; QA Director
+
+Test Results
+Project Manager
+
+Test Status report
+QA Manager, QA Director
+
+
+
+
+Metrics
+All team members
+
+
+
+
+
