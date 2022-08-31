@@ -2,12 +2,9 @@ package Tests;
 
 import static org.testng.Assert.assertEquals;
 import org.testng.annotations.Test;
-import Framework.SeleniumTestBase;
 import Pages.BuyNowPageObject;
 import Pages.ComparisonPageObject;
-import Pages.DealerPageObject;
 import Pages.HomePageObject;
-import Pages.ManualsPageObject;
 import Pages.RB108ManualPageObject;
 import Pages.RB108PageObject;
 import Pages.RocketBassPageObject;
